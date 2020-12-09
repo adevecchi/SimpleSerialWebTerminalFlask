@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Simple Serial Terminal</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" crossorigin>
+</head>
+<body>
+  <main role="main">
+    <section class="jumbotron pt-3 pb-2" style="border-bottom:solid 4px #555;border-radius:0;">
+      <div class="container clearfix">
+        <h1 class="float-left">
+          <img src="/static/images/logo.png" style="vertical-align: text-bottom; height:2.7rem;"> 
+          Simple Serial Terminal
+        </h1>
+        <div class="float-right">
+          <img src="/static/images/PyArdu.png" style="height:3.5rem;">
+        </div>
+      </div>
+    </section> 
+    <div class="container">
+      <form>
+        <div class="row">
+          <div class="col-sm-12 col-md-4">
+            <div class="form-group row">
+              <label for="port" class="col-sm-12 col-md-4">Port Name</label>
+              <div class="col-sm-12 col-md-8">
+                <input type="text" class="form-control" name="port" id="port">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="baudrate" class="col-sm-12 col-md-4">Baud Rate</label>
+              <div class="col-sm-12 col-md-8">
+                <select name="baudrate" id="baudrate" class="form-control">
+                  <option value="1200">1200</option>
+                  <option value="2400">2400</option>
+                  <option value="4800">4800</option>
+                  <option value="9600" selected>9600</option>
+                  <option value="19200">19200</option>
+                  <option value="38400">38400</option>
+                </select>
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-group col-sm-12 col-md-12">
+                <button type="button" id="cmd-port" class="btn btn-success form-control">Open Port</button>
+              </div>
+            </div> <!-- /row -->
+            <div class="row">
+              <div class="form-group col-sm-12 col-md-12">
+                <button type="button" id="clear" class="btn btn-dark form-control">Clear</button>
+              </div>
+            </div>
+          </div> <!-- /col -->
+          <div class="col-sm-12 col-md-8">
+            <div class="row">
+              <div class="col-sm-12 col-md-12">
+                <div class="input-group mb-3">
+                  <input type="text" name="message" id="message" class="form-control" aria-label="Send" aria-describedby="send-message">
+                  <div class="input-group-append">
+                    <button type="button" id="send-message" class="btn btn-outline-secondary">Send</button>
+                  </div>
+                </div>
+              </div> <!-- /col -->
+            </div> <!-- /row -->
+            <div class="row">
+              <div class="form-group col-sm-12 col-md-12">
+                <textarea class="form-control" id="receive-data" rows="12"></textarea>
+              </div>
+            </div>
+          </div> <!-- /col -->
+        </div> <!-- /row -->
+      </form>
+    </div> <!-- /container -->
+  </main>
+  <footer class="text-muted text-right mt-2">
+    <hr>
+    <div class="container">
+      <p class="small">&copy; 2020 - Andre Devecchi</p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" crossorigin></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" crossorigin></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js" crossorigin></script>
+  <script src="/static/js/main.js"></script>
+</body>
+</html>
