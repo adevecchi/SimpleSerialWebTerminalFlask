@@ -2,17 +2,9 @@ Terminal Serial Web Simples
 ===========================
 
 ### Requisitos:
-* click==7.1.2
-* Flask==1.1.2
-* Flask-SocketIO==4.3.2
-* itsdangerous==1.1.0
-* Jinja2==2.11.2
-* MarkupSafe==1.1.1
-* pyserial==3.5
-* python-engineio==3.14.2
-* python-socketio==4.6.1
-* six==1.15.0
-* Werkzeug==1.0.1
+* flask
+* flask-socketio
+* pyserial
 
 ### Sistemas Operacinais testados:
 * Windows
