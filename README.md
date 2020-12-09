@@ -24,4 +24,4 @@ Exemplo de teste utilizando um Arduino para realizar comunicação transmitindo 
 
 Windows
 -------
-![Tela Windows](https://github.com/adevecchi/SimpleSerialWebTerminalFlask/blob/main/static/images/terminal-win.png)
+![Tela Windows](https://github.com/adevecchi/SimpleSerialWebTerminalFlask/blob/main/static/images/screenshot/terminal-win.png)
